@@ -2032,6 +2032,18 @@ pre code {
   }
 }
 
+.versus-info {
+  color: #2cc78c;
+  float: left;
+  margin-bottom: 10%;
+}
+
+.plantiff-info {
+  color: #efa300;
+  float: right;
+  margin-bottom: 10%;
+}
+
 .form-control::-ms-expand {
   background-color: transparent;
   border: 0;
@@ -8490,7 +8502,7 @@ button.bg-dark:focus {
 
 .pb-3,
 .py-3 {
-  padding-bottom: 1rem !important;
+  padding-bottom: 2rem !important;
 }
 
 .pl-3,

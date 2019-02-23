@@ -31,6 +31,10 @@ def dashboard():
 def firm():
     return render_template("firm.html")
 
+@app.route("/nonhome")
+def nonhome():
+    return render_template("non_home_layout.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)

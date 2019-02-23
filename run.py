@@ -2,18 +2,27 @@ from flask import Flask, render_template, url_for, flash, redirect, request
 
 app = Flask(__name__)
 
+
 @app.route("/")
 @app.route("/home")
 def home():
     return render_template('home.html')
 
+
 @app.route("/signup")
 def signup():
     return render_template('signup_form.html')
 
+
 @app.route("/portal")
 def portal():
     return render_template("portal.html")
+
+
+@app.route("/dash")
+def dashboard():
+    return render_template("dash.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)

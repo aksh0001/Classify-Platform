@@ -23,6 +23,9 @@ def portal():
 def dashboard():
     return render_template("dash.html")
 
+@app.route("/firm")
+def firm():
+    return render_template("firm.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

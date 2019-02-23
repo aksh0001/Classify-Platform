@@ -389,6 +389,7 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -10625,6 +10626,10 @@ a:focus {
 
 .text-gray-800 {
   color: #5a5c69 !important;
+}
+
+.text-red-800 {
+  color: #ff5116 !important;
 }
 
 .text-gray-900 {

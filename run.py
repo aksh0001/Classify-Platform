@@ -22,7 +22,6 @@ def portal():
 @app.route("/expert")
 def expert():
     return render_template("expert.html")
-=======
 
 @app.route("/dash")
 def dashboard():

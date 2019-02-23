@@ -18,7 +18,7 @@ def signup():
 def portal():
     return render_template("portal.html")
 
-<<<<<<< HEAD
+
 @app.route("/expert")
 def expert():
     return render_template("expert.html")
@@ -30,7 +30,7 @@ def dashboard():
 @app.route("/firm")
 def firm():
     return render_template("firm.html")
->>>>>>> 27d832ebb4e0a8669e4c4038b0927ab7de3af6f4
+
 
 if __name__ == '__main__':
     app.run(debug=True)

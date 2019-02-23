@@ -10596,6 +10596,10 @@ a:focus {
   font-size: 1.2rem;
 }
 
+.text-purple {
+  color: #c63df4 !important;
+}
+
 .text-gray-100 {
   color: #f8f9fc !important;
 }
@@ -10650,6 +10654,16 @@ a:focus {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.border-all-primary {
+  border-left: 0.25rem solid #1cc88a !important;
+  border-right: 0.25rem solid #1cc88a !important;
+  border-top: 0.25rem solid #1cc88a !important;
+  border-bottom: 0.25rem solid #1cc88a !important;
+}
+
+.border-left-grey {
+  border-left: 0.25rem solid #c63df4 !important;
+}
 
 .border-left-primary {
   border-left: 0.25rem solid #4e73df !important;
@@ -10690,6 +10704,7 @@ a:focus {
 .border-bottom-danger {
   border-bottom: 0.25rem solid #e74a3b !important;
 }
+
 
 .progress-sm {
   height: .5rem;

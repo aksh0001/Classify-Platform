@@ -1,49 +1,69 @@
-{% extends "layout.html" %}
+{% extends "non_home_layout.html" %}
 {% block content %}
 <!DOCTYPE html>
 <div class="container">
 
     <p>
-    <h5>Features:</h5>
+    <h2>Kilmore Bushfire Class Action</h2>
     <ul>
-        <li>Responsive design with hover effect</li>
-        <li>Compatible with bootstrap 3.0.0 and Up</li>
-        <li>No Javascript</li>
-    </ul>
-    <hr>
-    </p>
-    
-    <h2>Resources</h2>
-    <ul class="list-unstyled video-list-thumbs row">
-        <li class="col-lg-3 col-sm-4 col-xs-6">
-            <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                <img src="static/img/class_logo.jpg" alt="Barca" class="img-responsive"
-                     height="130px"/>
-                <h6>Classify 101</h6>
-                <span class="glyphicon glyphicon-play-circle"></span>
-                <span class="duration">Length: 03:15</span>
-            </a>
-        </li>
-        <li class="col-lg-3 col-sm-4 col-xs-6">
-            <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                <img src="static/img/judge-hammer.jpg" alt="Barca" class="img-responsive"
-                     height="130px"/>
-                <h6>Class Actions in Practice</h6>
-                <span class="glyphicon glyphicon-play-circle"></span>
-                <span class="duration">Length: 07:09</span>
-            </a>
-        </li>
-        <li class="col-lg-3 col-sm-4 col-xs-6">
-            <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                <img src="static/img/people.jpg" alt="Barca" class="img-responsive"
-                     height="130px"/>
-                <h6>Meet other Claimants!</h6>
-                <span class="glyphicon glyphicon-play-circle"></span>
-                <span class="duration">Length: 01:35</span>
-            </a>
-        </li>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width:20%">
+                Registered
+            </div>
+            <div class="progress-bar bg-warning" style="width:20%">
+                Documents Verified
+            </div>
+            <div class="progress-bar bg-danger" style="width:40%">
+                Claims Settled
+            </div>
+            <div class="progress-bar bg-gray-400   " style="width: 20%"> Settlement Distributed</div>
+        </div>
     </ul>
 
+    <div class="row">
+        <div class="col">
+
+            <h3>Case Update</h3>
+
+
+            <img src="static/img/fire.png" alt="Barca" align="left" class="img-responsive" style="padding: 10px"
+                 height="130px"/>
+            The Settlement Administration of the Kilmore East – Kinglake & Murrindindi – Marysville Black Saturday
+            Class Actions is now substantially completed. The primary outstanding issue to be resolved is a dispute
+            as to the taxation of the settlement monies, which has proceeded to litigation in the Federal Court of
+            Australia.
+
+            The Settlement Administration has been overseen by the Supreme Court of Victoria and the Scheme
+            Administrator has provided regular updates to the Court by attending case management hearings and filing
+            written materials containing information about the Settlement Administration and its progress.
+        </div>
+        <div class="col"><h3>Documents Submitted:</h3>
+
+            <table class="table">
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Medical Documents</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Land Documents</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Third Party Funding Documents</td>
+                    <td>✘</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+
+    </div>
 </div>
-
 {% endblock %}

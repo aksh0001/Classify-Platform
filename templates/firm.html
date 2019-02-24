@@ -8,13 +8,15 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1"> No. Experts
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1"> Total Claimants
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">35</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">42,341</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-gavel fa-2x text-gray-300"></i>
                         </div>
+                        <img class="d-block w-100" src="static/img/damage_graph2.png"
+                             style="position: relative; top: 20px;">
                     </div>
                 </div>
             </div>
@@ -26,12 +28,11 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Reviewal
-                                Time
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Assessment Completion
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">784 hour(s)</div>
+                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">46 %</div>
                                 </div>
                                 <div class="col">
                                     <div class="progress progress-sm mr-2">
@@ -44,6 +45,7 @@
                         <div class="col-auto">
                             <i class="fas fa-gavel fa-2x text-gray-300"></i>
                         </div>
+                        <img class="d-block w-100" src="static/img/assess_graph.png">
                     </div>
                 </div>
             </div>
@@ -55,26 +57,42 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Billable Hours per
-                                Claimant
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Expenditure
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$1235.67</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">$503,610</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                         </div>
+                        <img class="d-block w-100" src="static/img/expenditure.png"
+                             style="position: relative; top: 30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Claimants per year
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">3,678</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                        </div>
+                        <img class="d-block w-100" src="static/img/pie.png"
+                             style="position: relative;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="card o-hidden border-0 shadow-lg my-4" style="width: 100%;">
         <div class="p-5">
-            <div class="text-left">
-                <h2 class="h1 mb-4 text-capitalize">At a Glance...</h2>
-            </div>
-
             <!-- Graphs-->
             <div class="row">
                 <div class="col">
@@ -107,10 +125,10 @@
                 </div>
             </div>
 
-            </div>
-
-
         </div>
+
+
     </div>
+</div>
 
 {% endblock %}

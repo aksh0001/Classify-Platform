@@ -585,6 +585,28 @@ pre code {
   margin-left: auto;
 }
 
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexbox .col {
+  flex: 5;
+}
+
+.flexbox .col:nth-child(1) {
+  order: 1;
+}
+.flexbox .col:nth-child(2) {
+  order: 0;
+  margin-left: 40px;
+}
+.flexbox .col:nth-child(3) {
+  order: 2;
+  margin-right: 40px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1305,7 +1327,7 @@ pre code {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+
   }
   .col-lg-7 {
     -webkit-box-flex: 0;
@@ -2036,13 +2058,13 @@ pre code {
 .versus-info {
   color: #2cc78c;
   float: left;
-  margin-bottom: 10%;
+  padding-top: 3%;
 }
 
 .plantiff-info {
+  padding-top: 3%;
   color: #efa300;
   float: right;
-  margin-bottom: 10%;
 }
 
 .form-control::-ms-expand {
@@ -4905,7 +4927,8 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid #e3e6f0;
-  border-radius: 0.35rem;
+  border-radius: 0.7rem;
+  flex: 1;
 }
 
 .card > hr {
@@ -4934,6 +4957,12 @@ input[type="button"].btn-block {
   margin-bottom: 0.75rem;
 }
 
+.card-title-link {
+  padding-top: 1%;
+  text-align: center;
+}
+
+
 .card-subtitle {
   margin-top: -0.375rem;
   margin-bottom: 0;
@@ -4951,8 +4980,30 @@ input[type="button"].btn-block {
   margin-left: 1.25rem;
 }
 
+.card-socials {
+  width: 50px;
+  text-align: center;
+  color: purple;
+  width: 33.33%;
+}
+
+.card-specs-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: black;
+  float: right;
+  text-align: center;
+  width: 33.33%;
+}
+
+.card-specs-desc {
+  font-weight: bold;
+  padding-top:7px
+}
+
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   margin-bottom: 0;
   color: inherit;
   background-color: #f8f9fc;
@@ -8503,7 +8554,7 @@ button.bg-dark:focus {
 
 .pb-3,
 .py-3 {
-  padding-bottom: 2rem !important;
+  padding-bottom: 0.75rem !important;
 }
 
 .pl-3,

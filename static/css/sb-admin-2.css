@@ -432,6 +432,7 @@ small,
   font-weight: 400;
 }
 
+
 mark,
 .mark {
   padding: 0.2em;
@@ -873,6 +874,14 @@ pre code {
 
 .offset-11 {
   margin-left: 91.66667%;
+}
+
+.signup-title {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 50px;
 }
 
 @media (min-width: 576px) {

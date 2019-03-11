@@ -1,71 +1,215 @@
-{% extends "non_home_layout.html" %}
+{% extends "dash_layout.html" %}
 {% block content %}
 <!DOCTYPE html>
 <div class="container">
 
     <p><br/>
     <h1 class="m-0 font-weight-bold text-info">Plaintiff Portal</h1>
-    <br/>
-    <h2>Kilmore Bushfire Class Action</h2>
-    <ul>
-        <div class="progress">
-            <div class="progress-bar bg-success" style="width:20%">
-                Registered
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 user-details">
+                <div class="user-image">
+                    <img src="http://www.gravatar.com/avatar/2ab7b2009d27ec37bffee791819a090c?s=100&d=mm&r=g"
+                         alt="Karan Singh Sisodia" title="Karan Singh Sisodia" class="img-circle">
+                </div>
+                <div class="user-info-block">
+                    <div class="user-heading">
+                        <h3>Emma</h3>
+                        <span class="help-block">Melbourne, AU</span>
+                    </div>
+                    <ul class="navigation">
+                        <li class="active">
+                            <a data-toggle="tab" href="#information">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#settings">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#email">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#events">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="user-body">
+                        <div class="tab-content">
+                            <div id="information" class="tab-pane active">
+                                <h4>Account Information</h4>
+                            </div>
+                            <div id="settings" class="tab-pane">
+                                <h4>Settings</h4>
+                            </div>
+                            <div id="email" class="tab-pane">
+                                <h4>Send Message</h4>
+                            </div>
+                            <div id="events" class="tab-pane">
+                                <h4>Events</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="progress-bar bg-warning" style="width:20%">
-                Documents Verified
-            </div>
-            <div class="progress-bar bg-danger" style="width:40%">
-                Claims Settled
-            </div>
-            <div class="progress-bar bg-gray-400   " style="width: 20%"> Settlement Distributed</div>
         </div>
-    </ul>
-    <hr>
+        <style>body {
+            background: #EAEAEA;
+        }
 
-    <div class="row">
-        <div class="col">
+        .user-details {
+            position: relative;
+            padding: 0;
+        }
 
-            <h3>Case Update</h3>
+        .user-details .user-image {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+        }
 
+        .user-image img {
+            clear: both;
+            margin: auto;
+            position: relative;
+        }
 
-            <img src="static/img/fire.png" alt="Barca" align="left" class="img-responsive" style="padding: 10px"
-                 height="130px"/>
-            The Settlement Administration of the Kilmore East – Kinglake & Murrindindi – Marysville Black Saturday
-            Class Actions is now substantially completed. The primary outstanding issue to be resolved is a dispute
-            as to the taxation of the settlement monies, which has proceeded to litigation in the Federal Court of
-            Australia.
+        .user-details .user-info-block {
+            width: 100%;
+            position: absolute;
+            top: 55px;
+            background: rgb(255, 255, 255);
+            z-index: 0;
+            padding-top: 35px;
+        }
 
-            The Settlement Administration has been overseen by the Supreme Court of Victoria and the Scheme
-            Administrator has provided regular updates to the Court by attending case management hearings and filing
-            written materials containing information about the Settlement Administration and its progress.
-        </div>
-        <div class="col"><h3>Documents Submitted:</h3>
+        .user-info-block .user-heading {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0 0;
+        }
 
-            <table class="table">
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Medical Documents</td>
-                    <td>✔</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Land Documents</td>
-                    <td>✔</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Third Party Funding Documents</td>
-                    <td>✘</td>
-                </tr>
-                </tbody>
-            </table>
+        .user-info-block .navigation {
+            float: left;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-bottom: 1px solid #428BCA;
+            border-top: 1px solid #428BCA;
+        }
 
+        .navigation li {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
 
-        </div>
+        .navigation li a {
+            padding: 20px 30px;
+            float: left;
+        }
 
+        .navigation li.active a {
+            background: #428BCA;
+            color: #fff;
+        }
 
+        .user-info-block .user-body {
+            float: left;
+            padding: 5%;
+            width: 90%;
+        }
+
+        .user-body .tab-content > div {
+            float: left;
+            width: 100%;
+        }
+
+        .user-body .tab-content h4 {
+            width: 100%;
+            margin: 10px 0;
+            color: #333;
+        }</style>
     </div>
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="p-5">
+            <h2>Kilmore Bushfire Class Action</h2>
+            <br/>
+            <ul>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width:20%">
+                        Registered
+                    </div>
+                    <div class="progress-bar bg-warning" style="width:20%">
+                        Documents Verified
+                    </div>
+                    <div class="progress-bar bg-danger" style="width:40%">
+                        Claims Settled
+                    </div>
+                    <div class="progress-bar bg-gray-400   " style="width: 20%"> Settlement Distributed</div>
+                </div>
+            </ul>
+            <hr>
+
+            <div class="row">
+                <div class="col">
+
+                    <h3>Case Update</h3>
+
+
+                    <img src="static/img/fire.png" alt="Barca" align="left" class="img-responsive" style="padding: 10px"
+                         height="130px"/>
+                    The Settlement Administration of the Kilmore East – Kinglake & Murrindindi – Marysville Black
+                    Saturday
+                    Class Actions is now substantially completed. The primary outstanding issue to be resolved is a
+                    dispute
+                    as to the taxation of the settlement monies, which has proceeded to litigation in the Federal Court
+                    of
+                    Australia.
+
+                    The Settlement Administration has been overseen by the Supreme Court of Victoria and the Scheme
+                    Administrator has provided regular updates to the Court by attending case management hearings and
+                    filing
+                    written materials containing information about the Settlement Administration and its progress.
+                </div>
+                <div class="col"><h3>Documents Submitted:</h3>
+
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Medical Documents</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Land Documents</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Third Party Funding Documents</td>
+                            <td>✘</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
 </div>
 {% endblock %}

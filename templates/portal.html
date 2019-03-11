@@ -1,31 +1,57 @@
-{% extends "non_home_layout.html" %}
+{% extends "portal_layout.html" %}
 {% block content %}
 <!-- Page Heading -->
 <!DOCTYPE html>
+<head>
+
+
+    <title>Plaintiff Portal Page</title>
+</head>
 <div class="container">
 
     <div class="card o-hidden border-0 shadow-lg my-5">
         <div class="card-body p-0">
             <div class="p-5">
-                      <h1 class="m-0 font-weight-bold text-primary">Plaintiff Questionnaire</h1><br/>
-                      
-                      </br/>
+                <h1 class="m-0 font-weight-bold text-primary">Plaintiff Questionnaire</h1><br>
+
+            </br/>
                 <form role="form">
                     <div class="form-group">
-                        <label for="email">Q1: Have you suffered psychological harm?</label>
+                        <label for="email">Have you suffered psychological harm?</label>
                         <input type="email" class="form-control" id="email">
                     </div>
                     <div class="form-group">
-                        <label for="email">Q2: Have you suffered physical harm?</label>
+                        <label for="email">Have you suffered physical harm?</label>
                         <input type="email" class="form-control" id="email">
                     </div>
                     <div class="form-group">
-                        <label for="email">Q3: How much damage occured to your property?</label>
+                        <label for="email">Please fill in any other damage/harm/disadvantage you have faced</label>
                         <input type="email" class="form-control" id="email">
                     </div>
-                    <div class="form-group">
-                        <label for="email">Q4: Please fill in any other damage/harm/disadvantage you have faced</label>
-                        <input type="email" class="form-control" id="email">
+                    <!-- was here-->
+                    <div>
+                        <div>
+                            <label for="email">Please estimate your property damage</label>
+                        </div>
+                        <!-- Change Here -- IFrame solution -->
+                        <div id="slider_foo">
+                            <div data-role="main" class="ui-content">
+
+                                <div data-role="rangeslider">
+                                    <label for="price-min">Amount ($'000)</label>
+                                    <input type="range" name="price-min" id="price-min" value="50" min="50"
+                                           max="1000">
+                                    <label for="price-max">$:</label>
+                                    <input type="range" name="price-max" id="price-max" value="200" min="50"
+                                           max="1000">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email">Please provide supporting documentation to aid your case</label>
                     </div>
 
                     <form class="md-form">
@@ -56,15 +82,17 @@
                                 <input class="file-path validate" type="text" placeholder="Upload your file">
                             </div>
                         </div>
-                </form>
-                <a style="margin-top: 30px" href="#" class="btn btn-primary btn-icon-split">
+                    </form>
+                    <a style="margin-top: 30px" href="dash" class="btn btn-primary btn-icon-split">
                   <span class="icon text-white-50">
                     <i class="fas fa-arrow-right"></i>
                   </span>
-                  <span class="text">Submit</span>
-                </a>
+                        <span class="text">Submit</span>
+                    </a>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    {% endblock %}
+{% endblock %}

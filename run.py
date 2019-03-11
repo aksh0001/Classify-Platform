@@ -2,9 +2,11 @@ from flask import Flask, render_template, url_for, flash, redirect, request
 
 app = Flask(__name__)
 
+
 @app.route("/layout")
 def layout():
     return render_template('layout.html')
+
 
 @app.route("/")
 @app.route("/home")
@@ -26,13 +28,16 @@ def portal():
 def expert():
     return render_template("expert.html")
 
+
 @app.route("/dash")
 def dashboard():
     return render_template("dash.html")
 
+
 @app.route("/firm")
 def firm():
     return render_template("firm.html")
+
 
 @app.route("/nonhome")
 def nonhome():

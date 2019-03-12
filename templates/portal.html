@@ -3,10 +3,6 @@
 <!-- Page Heading -->
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
 
     <title>Plaintiff Portal Page</title>
 </head>
@@ -31,12 +27,17 @@
                         <label for="email">Please fill in any other damage/harm/disadvantage you have faced</label>
                         <input type="email" class="form-control" id="email">
                     </div>
-                    <!-- was here-->
+
+                    <div class="form-group">
+                        <label for="email">Please estimate your property damage ($'000)</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <!-- was here
+
                     <div>
                         <div>
                             <label for="email">Please estimate your property damage</label>
                         </div>
-                        <!-- Change Here -- IFrame solution -->
                         <div id="slider_foo">
                             <div data-role="main" class="ui-content">
 
@@ -51,48 +52,40 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                </form>
 
-                    <div>
-                        <label for="email">Please provide supporting documentation to aid your case</label>
-                    </div>
+                <div>
+                    <label for="email">Please provide supporting documentation to aid your case</label>
+                </div>
 
-                    <form class="md-form">
-                        <div class="file-field">
-                            <div class="btn btn-pink btn-rounded btn-sm float-left">
-                                <span><i class="fas fa-upload mr-2" aria-hidden="true"></i>Medical Certificates</span>
-                                <input type="file">
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" placeholder="Upload your file">
-                            </div>
+                <form class="md-form">
+                    <div class="file-field">
+                        <div class="btn btn-pink btn-rounded btn-sm float-left">
+                            <span><i class="fas fa-upload mr-2" aria-hidden="true"></i>Medical Certificates</span>
+                            <input type="file">
                         </div>
-                        <div class="file-field">
-                            <div class="btn btn-pink btn-rounded btn-sm float-left">
-                                <span><i class="fas fa-upload mr-2" aria-hidden="true"></i>Police Reports</span>
-                                <input type="file">
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" placeholder="Upload your file">
-                            </div>
+
+                    </div>
+                    <div class="file-field">
+                        <div class="btn btn-pink btn-rounded btn-sm float-left">
+                            <span><i class="fas fa-upload mr-2" aria-hidden="true"></i>Police Reports</span>
+                            <input type="file">
                         </div>
-                        <div class="file-field">
-                            <div class="btn btn-pink btn-rounded btn-sm float-left">
-                                <span><i class="fas fa-upload mr-2" aria-hidden="true"></i>Any Other Evidence</span>
-                                <input type="file">
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" placeholder="Upload your file">
-                            </div>
+                    </div>
+                    <div class="file-field">
+                        <div class="btn btn-pink btn-rounded btn-sm float-left">
+                            <span><i class="fas fa-upload mr-2" aria-hidden="true"></i>Any Other Evidence</span>
+                            <input type="file">
                         </div>
-                    </form>
-                    <a style="margin-top: 30px" href="dash" class="btn btn-primary btn-icon-split">
+                    </div>
+                </form>
+                <a style="margin-top: 40px; margin-left: 300px" href="dash" class="btn btn-primary btn-icon-split">
                   <span class="icon text-white-50">
                     <i class="fas fa-arrow-right"></i>
                   </span>
-                        <span class="text">Submit</span>
-                    </a>
-                </form>
+                    <span class="text">Submit</span>
+                </a>
             </div>
         </div>
     </div>

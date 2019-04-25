@@ -1,0 +1,24 @@
+{% extends "layout_firm.html" %}
+{% block content %}
+<head>
+    <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+
+</head>
+<div class="container">
+    <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+            <div class="p-5">
+                <h1 class="m-0 font-weight-bold text-gray-700">Update Claimants</h1><br>
+                <div class="row">
+                    <div class="column">
+                        <input type="checkbox" name="b1" value="Bike">Send all<br></div>
+                    <div class="column"><input type="checkbox" name="b2" value="Car" checked>Send group: Kilmore
+                        Bushfire CA<br></div>
+                </div>
+                <textarea rows="10" cols="100">Enter Default Text:</textarea>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

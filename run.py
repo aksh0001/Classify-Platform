@@ -44,5 +44,15 @@ def nonhome():
     return render_template("non_home_layout.html")
 
 
+@app.route("/mail_communication.html")
+def mail():
+    return render_template("mail_communication.html")
+
+
+# @app.errorhandler(404)
+# def page_not_found(e):
+#     return render_template('home.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

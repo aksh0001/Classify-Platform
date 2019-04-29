@@ -1,5 +1,18 @@
 {% extends "layout_firm.html" %}
 {% block content %}
+<head>
+    <style>
+        .zoom {
+            transition: transform .2s; /* Animation */
+            z-index: 1;
+        }
+
+        .zoom:hover {
+            transform: scale(3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            border: 1px solid #d0d0d0;
+        }
+    </style>
+</head>
 <div class="container">
     <h1 class="m-0 font-weight-bold text-info">Class Action Analytics</h1>
     <br>
@@ -66,8 +79,8 @@
                         <div class="col-auto">
                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                         </div>
-                        <img class="d-block w-100" src="static/img/expenditure.png"
-                             style="position: relative; top: 30px">
+                        <img class="d-block w-100 zoom" src="static/img/expenditure.png"
+                             style="position: relative; top: 30px;">
                     </div>
                 </div>
             </div>

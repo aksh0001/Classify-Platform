@@ -44,12 +44,12 @@ def nonhome():
     return render_template("non_home_layout.html")
 
 
-@app.route("/mail_communication.html")
+@app.route("/mail_communication")
 def mail():
     return render_template("mail_communication.html")
 
 
-@app.route("/video_communication.html")
+@app.route("/video_communication")
 def video():
     return render_template("video_communication.html")
 

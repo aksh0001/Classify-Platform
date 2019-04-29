@@ -49,6 +49,11 @@ def mail():
     return render_template("mail_communication.html")
 
 
+@app.route("/video_communication.html")
+def video():
+    return render_template("video_communication.html")
+
+
 # @app.errorhandler(404)
 # def page_not_found(e):
 #     return render_template('home.html')

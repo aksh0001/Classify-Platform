@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for, flash, redirect, request
 app = Flask(__name__)
 app.config['FREEZER_RELATIVE_URLS'] = True
 
-@app.route("/layout")
+@app.route("/layout.html")
 def layout():
     return render_template('layout.html')
 
@@ -39,9 +39,18 @@ def firm():
     return render_template("firm.html")
 
 
-@app.route("/nonhome")
+@app.route("/nonhome.html")
 def nonhome():
     return render_template("non_home_layout.html")
+
+@app.route("/mail_communication.html")
+def mail():
+    return render_template("mail_communication.html")
+
+
+@app.route("/video_communication.html")
+def video():
+    return render_template("video_communication.html")
 
 from flask_frozen import Freezer
 

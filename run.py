@@ -54,12 +54,12 @@ def video():
     return render_template("video_communication.html")
 
 
-@app.route("/cluster.html")
+@app.route("/cluster")
 def cluster():
     return render_template("cluster.html")
 
 
-@app.route("/claimant_list.html")
+@app.route("/claimant_list")
 def cl_list():
     return render_template("claimant_list.html")
 

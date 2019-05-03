@@ -54,6 +54,16 @@ def video():
     return render_template("video_communication.html")
 
 
+@app.route("/cluster.html")
+def cluster():
+    return render_template("cluster.html")
+
+
+@app.route("/claimant_list.html")
+def cl_list():
+    return render_template("claimant_list.html")
+
+
 # @app.errorhandler(404)
 # def page_not_found(e):
 #     return render_template('home.html')
